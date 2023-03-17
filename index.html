@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Datatype, Variables & Operators</title>
+
+    <style>
+    body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6f0ea;
+    display: grid;
+    font-family: "Trirong", serif;
+    }
+    </style>
+</head>
+<body> 
+    <h1>Declaration of variables using different data types.</h1>
+	
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+    <p id="p4"></p>
+
+	<script>
+		let myvariable = 1;  // numeric value
+		document.getElementById("p1").textContent = myvariable;
+
+		myvariable = 'one'; // string value
+		document.getElementById("p2").textContent = myvariable;
+
+		myvariable = true; // Boolean value
+		document.getElementById("p3").textContent = myvariable;
+        
+        myvariable = BigInt("123456789012345678901234567890"); //BigInt
+        document.getElementById("p4").textContent = myvariable; 
+
+        //object
+        const person = {
+               firstName : "Bhavana",
+               lastName  : "Jha",
+               age     : 23,
+               eyeColor  : "brown"
+            };
+        document.write(person.firstName + " is " + person.age + " years old.","<br><br>");
+
+        //Array Object
+        const fruits = ["Apple","Orange","Banana"];
+        document.write(fruits[0],"<br>");
+        document.write(fruits,"<br><br>");
+
+        // Date object:
+        const date = new Date("2022-03-16");
+        document.write(date,"<br>","<hr>");
+
+
+        document.write("<h1>Use of operators to perform arithmetic operations.</h1>");
+    
+        //arithmetic operations
+        var num1 = 5;
+        var num2 = 10;
+        console.log("The value of num1 & num 2 is " + (num1),(num2));
+		document.write("num1 =",num1,"<br>","num2 = ",num2,"<br>");
+        console.log("The value of num1 + num2 is "+ (num1 + num2));
+        document.write("num1 + num2 = ",(num1+num2),"<br>");
+        console.log("The value of num1 - num2 is "+ (num1 - num2));
+        document.write("num1 - num2 = ",(num1-num2),"<br>");
+        console.log("The value of num1 * num2 is "+ (num1 * num2));
+        document.write("num1 * num2 = ",(num1*num2),"<br>");
+        console.log("The value of num1 / num2 is "+ (num1 / num2));
+        document.write("num1 / num2 = ",(num1/num2),"<br>");
+        console.log("The value of num1 % num2 is "+ (num1 % num2));
+        document.write("num1 % num2 = ",(num1%num2),"<br>");
+        console.log("The value of num1++ is "+ (num1++));
+        document.write("num1 ++ = ",(num1++),"<br>");
+        console.log("The value of ++num1 "+ (++num1));
+        document.write("++num1 = ",(++num1),"<br>");
+        console.log("The value of num1-- is "+ (num1--));
+        document.write("num1-- = ",(num1--),"<br>");
+        console.log("The value of --num1 is "+ (--num1));
+        document.write("--num1 = ",(--num1),"<br>");
+        document.write(typeof num ,"<br>","<hr>");
+
+        document.write("<h1>Use of operators to perform comparison operations</h1>");
+
+        //comparison operations
+        let a = 5, b = 10, c = "5", x = a;
+
+        document.write("a =",a,"<br>","b = ",b,"<br>", "c = ",c,"<br>","x = ",a, "<br>");
+		document.write("a == c returns ", a == c,"<br>");
+        document.write("a === c returns ", a === c,"<br>");
+        document.write("a == x returns ", a == x,"<br>");
+		document.write("a != b returns ", a != b,"<br>");
+        document.write("a > b returns ", a > b,"<br>");
+        document.write("a < b returns ", a < b,"<br>");
+        document.write("a >= b returns ", a >= b,"<br>");
+        document.write("a <= b returns ", a <= b,"<br>");
+
+
+        document.write("<h1>Use of operators to perform logical operations</h1>");
+
+        //logical Operations
+        let log1 = 5, log2 = 10;
+
+        document.write("log1 =",log1,"<br>","log2 = ",log2,"<br>");
+		document.write((log1 != log2) && (log1 < log2),"<br>"); 
+		document.write((log1 > log2) || (log1 == log2),"<br>");
+		document.write((log1 < log2) || (log1 == log2),"<br>");
+		document.write(!(log1 < log2),"<br>");
+		document.write(!(log1 > log2),"<br>");
+
+</script>
+</script>
+    </script>  
+</body>
+</html>
